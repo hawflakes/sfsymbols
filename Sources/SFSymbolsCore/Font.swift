@@ -55,7 +55,7 @@ public struct Font {
         }
     }
     
-    private let font: CTFont
+    let font: CTFont
     
     public let glyphs: Array<Glyph>
     public let weight: Weight

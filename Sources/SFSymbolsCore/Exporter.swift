@@ -19,6 +19,7 @@ public enum ExportFormat: String, CaseIterable {
     case pdf = "pdf"
     case iconset = "iconset"
     case iconsetPDF = "iconset-pdf"
+    case unicode = "unicode"
     
     public var exporter: Exporter {
         switch self {
@@ -31,6 +32,7 @@ public enum ExportFormat: String, CaseIterable {
             case .pdf: return PDFExporter()
             case .iconset: return IconsetExporter()
             case .iconsetPDF: return PDFAssetCatalog()
+            case .unicode: return UnicodeExporter()
         }
     }
 }

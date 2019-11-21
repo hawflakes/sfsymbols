@@ -25,7 +25,7 @@ public struct Glyph {
     
     private let font: CTFont
     private let originOffset: CGPoint
-    private let glyph: CGGlyph
+    let glyph: CGGlyph
     
     public let cgPath: CGPath
     
